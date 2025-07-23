@@ -1,3 +1,5 @@
+[![Build and Push to GHCR](https://github.com/mattvonrocketstein/docker-mcmas/actions/workflows/docker-build-push.yml/badge.svg)](https://github.com/mattvonrocketstein/docker-mcmas/actions/workflows/docker-build-push.yml)
+
 ## MCMAS in a Container
 
 MCMAS is a model-checker for multi-agent systems that supports temporal epistemic logic.  MAS descriptions are given by means of programs written in the ISPL language.  ISPL is an agent-based, modular language inspired by interpreted systems, a popular semantics.  It describes things like: agents, groups, environments, states, evolutions, protocols, and fairness.  Temporal logic operators include AG/EF/AX. Epistemic logic supports K/GK/GCK/DK.
