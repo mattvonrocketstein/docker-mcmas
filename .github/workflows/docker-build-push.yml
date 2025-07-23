@@ -10,10 +10,11 @@
 name: Publish Docker image
 
 on:
+  workflow_call: {}
   release:
     types: [published]
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
     paths-ignore:
       - '**.md'
 
