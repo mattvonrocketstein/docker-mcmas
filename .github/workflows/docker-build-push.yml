@@ -17,7 +17,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: mcmas
 
 jobs:
   build-and-push:
@@ -49,3 +49,8 @@ jobs:
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
+    - name: Print pull command
+      run: |
+        echo "🐳 Image pushed successfully!"
+        echo "To pull this image, run:"
+        echo "docker pull ${{ fromJSON(steps.meta.outputs.json).tags[0] }}"
