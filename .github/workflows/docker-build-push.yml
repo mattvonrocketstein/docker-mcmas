@@ -17,7 +17,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: mcmas
+  IMAGE_NAME: mattvonrocketstein/mcmas
 
 jobs:
   build-and-push:
